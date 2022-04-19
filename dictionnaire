@@ -1,0 +1,64 @@
+variables:
+	au clavier chef !() = scanf();
+	prêt à envahir les écrans?=printf()
+	on est des jumeaux // affectation; ou bien soulmate === affectation
+
+
+
+
+functions:
+	arithmétiques:
+					*quotient:  
+					*reste: "on est congru à "
+					*min : "je suis le benjamin"
+					*max: "je suis l'aîné"
+					*somme : je gagne
+					*moins: je perds
+					*multiplication : duplication 
+					*division: en fractionnant (a,b)
+					*valeur absolue : la moitié pleine du verre
+					*la partie entière : partie entière
+					*
+
+	tests logiques: 
+					*test  d'égalité : miroir
+					*est_vide (NULL en C) : 
+					* true/ false:
+					* "if e in E" : 
+
+
+	numériques :
+				 	*recherche dichotomique : matriochkas
+				 	"* recherche dichotomique chaine de caracteres" // À voir 
+				 	* calcul intégral :
+				 			methode de nexton : apple
+				 			Riemman : Petit Lebesgue
+
+
+	sur les listes:
+
+					*append : accueillir un nouveau membre
+					*pop : pauvre viré
+					* tri : triste ( tri_liste)
+
+
+commentaire:
+				se fait par le biais de : $ au début et $ à la fin
+
+
+file operations :
+					
+					ouverture/ mode de lecture : fais_voir   
+					fermeture : au revoir :\
+					fin du fichier :c'est fini
+					fprintf :  
+					fsprintf:
+
+compound statements:
+					
+					*structure if :
+					
+
+
+
+
