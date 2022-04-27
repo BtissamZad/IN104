@@ -22,7 +22,8 @@ functions:
 
 	tests logiques: 
 					*test  d'égalité : miroir
-					*est_vide (NULL en C) : 
+					*est_vide (NULL en C) :
+					*est_trié ( en parlant d'un tableau)
 					* true/ false:
 					* "if e in E" : 
 
