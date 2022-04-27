@@ -21,7 +21,7 @@ functions:
 					*
 
 	tests logiques: 
-					*test  d'égalité : miroir
+					*test  d'égalité : miroir ( pour égalité entre listes voir rubrique "sur les listes")
 					*est_vide (NULL en C) :
 					*est_trié ( en parlant d'un tableau)
 					* true/ false:
@@ -38,9 +38,10 @@ functions:
 
 	sur les listes:
 
-					*append : accueillir un nouveau membre
+					*append : accueillir un nouveau membre ( insérer un élément au DEBUT)
 					*pop : pauvre viré
 					* tri : triste ( tri_liste)
+					* égalité entre 2 listes
 
 
 commentaire:

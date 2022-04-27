@@ -56,3 +56,38 @@
                     if(a<0){ a=-a;}
                     return a;
                 }
+
+/* SUR LES LISTES  on traite des listes d'entiers ( reste à généraliser :) )*/
+            typedef struct liste {
+                int valeur;
+                struct liste* suivant;
+            }liste;
+
+   // pour tester l'égalité entre 2 listes : cela renvoie soit 0 soit 1
+            int list_egalite(liste* l , liste* m)
+            {
+                while(l != NULL && m != NULL)
+                {
+                    if(l->valeur != m->valeur)
+                        return 0;
+                    l = l->suivant;
+                    m = m->suivant;
+                }
+                return (l == NULL && m == NULL);
+            }
+
+            liste ajout_en_tete( liste* l,int elem){
+                liste* tmp =malloc(sizeof(struct liste));
+                if ( tmp == NULL ) return ( NULL ) ;
+                tmp -> valeur= elem ;
+                tmp -> suivant = l ;
+                return ( tmp ) ;
+            }
+
+            int pop(liste* l){
+                int Val;
+                liste* tmp;
+                if(!l) { return -1;  } // cela renvoie -1 si la liste est déjà vide
+                // à compléter pour après
+            }
+
