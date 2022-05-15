@@ -28,7 +28,7 @@ functions:
 					* "if e in E" : 
 
 
-	numériques :
+	//numériques :
 				 	*recherche dichotomique : matriochkas
 				 	"* recherche dichotomique chaine de caracteres" // À voir 
 				 	* calcul intégral :
@@ -59,8 +59,19 @@ file operations :
 compound statements:
 					
 					*structure if :
+					                   if : si jamais Saint Sulpice est d'accord () : retour à la ligne privilégié
+					                   else : supplice ()
 					
+                    * while :
+                                Luxembourg () :
+                    *for :
+                            boucle d'or (i=0,i<n,i++) :
+
+                    *return : please collect all your belongings ()
 
 
+Définitions de fonctions :
+                            maCAF nom_function(arguments):
+                                // pas besoin d'indiquer le type de la variable : il doit l'allouer tout seul
 
 
