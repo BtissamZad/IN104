@@ -2,7 +2,7 @@ variables:
 	au clavier chef !() = scanf();
 	prêt à envahir les écrans?=printf()
 	on est des jumeaux // affectation; ou bien soulmate === affectation
-
+    strings: VERDICT
 
 
 
@@ -50,10 +50,10 @@ commentaire:
 
 file operations :
 					
-					ouverture/ mode de lecture : fais_voir   
+					ouverture/ mode de lecture : fais_voir
 					fermeture : au revoir :\
 					fin du fichier :c'est fini
-					fprintf :  
+					fprintf :
 					fsprintf:
 
 compound statements:
@@ -68,10 +68,20 @@ compound statements:
                             boucle d'or (i=0,i<n,i++) :
 
                     *return : please collect all your belongings ()
+                    * error: Oupsie
 
 
 Définitions de fonctions :
                             Passeport nom_function(arguments):
                                 // pas besoin d'indiquer le type de la variable : il doit l'allouer tout seul
+
+
+
+
+
+
+
+
+
 
 
