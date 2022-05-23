@@ -71,7 +71,7 @@ compound statements:
 
 
 Définitions de fonctions :
-                            maCAF nom_function(arguments):
+                            Passeport nom_function(arguments):
                                 // pas besoin d'indiquer le type de la variable : il doit l'allouer tout seul
 
 

@@ -1,40 +1,51 @@
-%{
- /* besoin de ceci pour l'appel à atof() plus bas */
-#include <math.h>
-%}
+/* analyseur pour un langage de type Pascal */
 
-CHIFFRE  [0-9]
-ID       [a-z][a-z0-9]*
-%%
-{CHIFFRE}+  {
+    %{
+    /* besoin de ceci pour l'appel à atof() plus bas */
+    #include <math.h>
+    %}
+
+    CHIFFRE  [0-9]
+    ID       [a-z][a-z0-9]*
+    CHAINE
+    %%
+
+    {CHIFFRE}+  {
                 printf( "Un entier : %s (%d)\n", yytext, atoi(yytext));
                 }
-{CHIFFRE}+"."{CHIFFRE}* {
+
+    {CHIFFRE}+"."{CHIFFRE}* {
                 printf( "Un nombre flottant : %s (%g)\n", yytext,
                 atof(yytext));
                 }
-si saint sulpice|supplice|luxembourg|def|boucle d'or()|pret à envahir les écrans|au clavier chef|please collect all your belongings ()|soulmate {printf( "Un mot-clé : %s\n", yytext );}
 
-{ID}       { printf( "Un identificateur : %s\n", yytext );}
+    "si Saint Sulpice est pour"|"Supplice"|"pret a envahir les ecrans"|"au clavier chef"|"Passeport"|"luxembourg"|"boucle d or"|"please collect all your belongings"|"fais voir"|"au revoir" {
+                printf( "Un mot-clé : %s\n", yytext );
+                }
 
-"+"|"-"|"*"|"/"   {printf( "Un opérateur : %s\n", yytext );}
-"{"[^}\n]*"}"     /* manger les commentaires d'une ligne */
+    {ID}        printf( "Un identificateur : %s\n", yytext );
 
- /* manger les blancs */
-
-.           {printf( "Caractère non reconnu : %s\n", yytext );}
-\n    {return 0;}
+    "+"|"-"|"*"|"/"|"="   {printf( "Un opérateur : %s\n", yytext );}
+    "(" | ")"         {printf("parenthèses : %s\n",yytext );}
 
 
-%%
+    "{"[^}\n]*"}"     /* manger les commentaires d'une ligne */
 
-int main(int argc, char* argv[}] ){
+    [ \t\n]+          /* manger les blancs */
 
+    .           printf( "Caractère non reconnu : %s\n", yytext );
 
-   if ( argc > 1 ){
-                yyin = fopen( argv[1], "r" );
-   }else{
+    %%
+
+    main( argc, argv )
+    int argc;
+    char **argv;
+        {
+        ++argv, --argc;  /* passer le nom du programme */
+        if ( argc > 0 )
+                yyin = fopen( argv[0], "r" );
+        else
                 yyin = stdin;
-   }
-   yylex();
-}
+
+        yylex();
+        }
