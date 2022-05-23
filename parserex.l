@@ -8,7 +8,7 @@
          char* mot ;
 }
 
-%tokrn EOL
+%token EOL
 %token<num> NUMBER
 %type<num> expr
 %token GAGNE PERD DUPLICATION ENFRACTIONNANT
