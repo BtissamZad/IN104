@@ -11,7 +11,7 @@ ID       [a-z][a-zA-Z0-9]*
 
 %%
 
-{DIGIT}+    { yylval.ent = atoi( yytext ) ;printf("Enitier : %d\n", atoi(yytext); return ENTIER;
+{DIGIT}+    { yylval.ent = atoi( yytext ) ;printf("Entier : %d\n", atoi(yytext); return ENTIER;
             }
 
 {DIGIT}+"."{DIGIT}*        {yylval.num =atof( yytext ) ;printf("Nombre : %f\n",atof(yytext)); return NUMBER;
