@@ -1,7 +1,6 @@
 %{
 	/* Definition section */
 #include <stdio.h>
-
 %}
 
 %union { int ent;
