@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 struct racine {
     int data ; char caractere; char* expression ; double reel; bool verite;
 };
