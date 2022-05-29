@@ -4,8 +4,6 @@ variables:
 	on est des jumeaux // affectation; ou bien soulmate === affectation
     strings: VERDICT
 
-
-
 functions:
 	arithmétiques:
 					*quotient:  
