@@ -33,8 +33,8 @@ ID       [a-z][a-zA-Z0-9]*
 "$$$"[^}\n]*"$$$"     {}
 
 \n              {printf("EOL\n"); return EOL ;}
-[\t]+          {printf(" Whitespace\n"); return WHITESPACE;}
-[ ]+           {}
+[\t]+           {printf(" Whitespace\n"); return WHITESPACE;}
+[ ]+            {}
 
 .               {}
 
