@@ -22,6 +22,7 @@ ID       [a-z][a-zA-Z0-9]*
 
 {ID}        printf( "An identifier: %s\n", yytext );
 
+
 "+"   {printf("Opérateur :  GAGNE\n"); return GAGNE ;}
 "-"   {printf("Opérateur :  PERD\n"); return PERD ;}
 "*"   {printf("Opérateur :  DUPLICATION\n"); return DUPLICATION ;}
